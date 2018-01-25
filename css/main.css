@@ -1,0 +1,546 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+body {
+  cursor: default;
+}
+
+ header {
+   width: 100%;
+ }
+
+ .bar1 {
+   overflow: hidden;
+   background-color: rgb(71, 9, 39);
+   font-family: 'Oswald', sans-serif;
+   font-weight: lighter;
+   color: white;
+   padding: 15px;
+ }
+
+ .lang {
+   float: left;
+   cursor: crosshair;
+ }
+
+ .log {
+   float: right;
+   cursor: crosshair;
+   line-height: 25px;
+ }
+
+ .log li {
+   display: inline;
+ }
+
+ .logo p {
+   text-align: center;
+   font-size: 80px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   text-decoration: line-through;
+ }
+
+ .logo {
+   padding: 85px;
+ }
+
+ .menuitems li {
+   font-family: 'Oswald', sans-serif;
+   font-size: 25px;
+   color: rgb(255, 255, 255);
+   /*float: left;*/
+   display: none;
+ }
+
+ .menuitems {
+   text-align: center;
+ }
+
+ .a {
+   left: 20%;
+   padding: 0 30px;
+ }
+
+ .b {
+   left: 43%;
+   padding: 0 30px;
+ }
+
+ .c {
+   left: 55%;
+   padding: 0 30px;
+ }
+
+ .d {
+   left: 70%;
+   padding: 0 30px;  
+ }
+
+ .smallbutton {
+   width: 50px;
+   height: 50px;
+   cursor: crosshair;
+ }
+
+ .smallbutton2 {
+   width: 50px;
+   height: 50px;
+   cursor: crosshair;
+ }
+
+ .menu {
+   display: inline;
+   padding-left: 5px;
+ }
+
+ .search {
+   display: inline;
+   float: right;
+   padding-right: 5px;
+ }
+
+ nav {
+   background-color: rgb(85, 85, 85);
+   padding: 10px;
+   padding-bottom: 10px;
+ }
+
+ .message {
+   background-color: rgb(242, 222, 214);
+   padding: 15px;
+   text-align: center;
+   font-size: 16px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: normal;
+ }
+
+.type {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px;
+}
+
+.watches {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.watch1 {
+  width: 100%;
+  float: left;
+  padding-bottom: 30px;
+}
+
+.watch2 {
+  width: 33.33%;
+  float: left;
+}
+
+.watch3 {
+  width: 33.33%;
+  float: left;
+}
+
+.watch4 {
+  width: 33.33%;
+  float: left;
+}
+
+.img-resp {
+  width: 100%;
+}
+
+.classholes {
+  overflow: hidden;
+  width: 100%;
+}
+
+.line-separator {
+  height: 1px;
+  width: 250px;
+  margin: auto;
+  border-bottom: 1px solid #313030;
+  padding-top: 15px;
+}
+
+.money {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.button2 {
+  padding: 7px 30px;
+  border: none;
+  background-color: rgb(242, 222, 214);
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  cursor: crosshair;
+}
+
+.button2:hover {
+  box-shadow: 5px 6px rgba(0,0,0,0.24), 5px 6px rgba(0,0,0,0.19);
+}
+
+.details {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.specs {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(190, 187, 187);
+  border-left: 4px solid rgb(223, 223, 223);
+  border-right: 4px solid rgb(223, 223, 223);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.specs p {
+  padding: 6px;
+}
+
+.others {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.option1 {
+  width: 50%;
+  float: left;
+}
+
+.option2 {
+  width: 50%;
+  float: left;
+}
+
+.option3 {
+  width: 50%;
+  margin-left: 25%;
+}
+
+@font-face {
+  font-family: Socialico;
+  src: url(font/Socialico.ttf);
+}
+
+.icons p {
+ font-family: 'Socialico';
+ font-size: 50px;
+ display: inline;
+ padding: 3px;
+}
+
+.icons {
+ text-align: center;
+ padding-top: 20px;
+}
+
+footer {
+ font-family: 'Oswald', sans-serif;
+ width: 100%
+}
+
+.or {
+ text-align: center;
+ margin-bottom: 15px;
+ font-size: 16px;
+ font-weight: lighter;
+}
+
+.info {
+ text-align: center;
+ padding-top: 15px;
+ padding-bottom: 30px;
+ font-weight: lighter;
+ font-size: 20px;
+ overflow: hidden;
+}
+
+li {
+ list-style-type: none;
+ padding: 5px;
+ font-weight: normal;
+ font-size: 16px;
+}
+
+form {
+ text-align: center;
+}
+
+.email {
+ padding-top: 6px;
+ padding-bottom: 6px;
+ padding-right: 30px;
+ padding-left: 8px;
+ border: 1px solid black;
+ font-family: 'Oswald', sans-serif;
+ font-weight: lighter;
+ font-size: 15px;
+}
+
+.button {
+ padding: 7px 20px;
+ border: none;
+ background-color: rgb(242, 222, 214);
+ font-family: 'Oswald', sans-serif;
+ font-weight: lighter;
+ font-size: 15px;
+ cursor: crosshair;
+}
+
+.button:hover {
+  box-shadow: 5px 6px rgba(0,0,0,0.24), 5px 6px rgba(0,0,0,0.19);
+}
+
+ul {
+ padding: 15px;
+}
+
+.copy {
+ padding: 15px;
+ background-color: rgb(71, 9, 39);
+ color: white;
+ text-align: center;
+ font-size: 12px;
+ font-weight: lighter;
+}
+
+@media screen and (min-width: 750px) {
+
+  .type {
+      font-size: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuitems li {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+
+  .menuitems {
+    width: 100%;
+    height: 60px;
+  }
+
+  .lang li {
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .log li {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .message {
+    font-size: 25px;
+  }
+
+  .insta p {
+    font-size: 45px;
+  }
+
+  .or {
+    font-size: 25px;
+  }
+
+  .about, .service, .legal {
+    font-size: 25px;
+  }
+
+  .about li, .service li, .legal li {
+    font-size: 20px;
+  }
+
+  .email {
+    padding-right: 85px;
+  }
+
+  .watch1 {
+    width: 725px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .watches {
+    margin: 0 auto;
+  }
+
+  .watch2 {
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .watch3 {
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .watch4 {
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .money {
+    font-size: 40px;
+  }
+
+  .details {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about, .service, .legal {
+    width: 33.33%;
+    float: left;
+  }
+
+  .option1, .option2, .option3 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .option3 {
+    margin-left: 0;
+  }
+
+  .specs {
+    width: 750px;
+    height: 400px;
+    font-size: 25px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .specs {
+  width: 1000px;
+  height: 400px;
+  }
+
+  .classholes {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1450px){
+  .others {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
